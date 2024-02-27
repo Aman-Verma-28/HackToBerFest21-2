@@ -86,8 +86,7 @@ def voice_recog(player_one,player_two):
         print('\n')
 
         try:
-            option = r.recognize_google(audio)
-            if option == 'sex':
+            if (option := r.recognize_google(audio)) == 'sex':
                 option = '6'
 
             if option == 'Tu':
