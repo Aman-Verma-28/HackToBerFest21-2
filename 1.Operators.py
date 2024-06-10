@@ -46,9 +46,9 @@ f = [3,5,6]
 g = "khand"
 h = "khand"
 
-print(f"for single value memory allocate c == d {c is d}")
-print(f"for multiple value memory allocate e == f {e is f}")
-print(f"for single value memory allocate g == h {g is not h}")
+print(f"for single value memory allocate c == d {c == d}")
+print(f"for multiple value memory allocate e == f {e == f}")
+print(f"for single value memory allocate g == h {g != h}")
 
 # 2. Membership Operators IN and NOT IN are membership iperators 
 dic = {1:"a", 2:"b", 3:"c"}
