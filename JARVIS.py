@@ -5,7 +5,7 @@ import speech_recognition
 import wikipedia
 import webbrowser
 import os
-import random
+import secrets
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -99,7 +99,7 @@ if __name__ == "__main__":
         elif 'play hindi music' in query:
             webbrowser.open("https://music.youtube.com/watch?v=NeXbmEnpSz0&list=RDAMVMNeXbmEnpSz0")
         elif 'play music' in query:
-            x = random.randint(0, 13)
+            x = secrets.SystemRandom().randint(0, 13)
             webbrowser.open(list[x])
 
 
